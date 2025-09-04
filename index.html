@@ -7,20 +7,25 @@
     <meta name="description" content="Eric Ayanru| Course Home Page| WDD231">
     <meta name="author" content="Eric Ayanru">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+    <script defer src="scripts/navigation.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <img src="images/home.svg" alt="site Logo" width="512" height="512">
         <span>Eric's Site Title</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <button id="ham-btn" class="hamburger" aria-controls="nav-bar" aria-expanded="false" aria-label="Toggle navigation"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
             <li class="current"><a href="index.html">Home</a></li>
             <li><a href="#">Chamber Project</a></li>
             <li><a href="#">Final Project</a></li>
+            <li><a href="#">About</a></li>
         </ul>
     </nav>
     <main>
@@ -39,23 +44,23 @@
                 <img src="images/me_2.webp" alt="student" width="512">
             </div>
         </section>
+        <section class="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                <li><a href="https://web.dev/" target="_blank" rel="noopener">web.dev</a></li>
+            </ul>
+        </section>
         <section class="courses">
-            <h2>Web Certificate Courses</h2>
+            <h2>Web & Certificate Courses</h2>
             <div class="all">
-                <ul>
-                    <li>All</li>
-                    <li>CSE</li>
-                    <li>WDD</li>
-                </ul>
+                    <button id="all">All</button>
+                    <button id="cse">CSE</button>
+                    <button id="wdd">WDD</button>
             </div>
-            <div>
-                <ul>
-                    <li>WDD130</li>
-                    <li>WDD131</li>
-                    <li>WDD231</li>
-                </ul>
+            <div id="course">
             </div>
-            <p>The total credit for course listed above is 6</p>
+            <p>The total credit for course listed above is <span id="credits"></span></p>
         </section>
 
     </main>
@@ -66,9 +71,8 @@
             <a href="https://x.com/ericayanru_dev" target="_blank"><img src="images/twitter_logo_icon.svg" alt="twitter_logo_icon" width="32" height="32"></a>
             <a href="https://www.youtube.com/@ericayanru_dev" target="_blank"><img src="images/youtube_icon.svg" alt="youtube_icon" width="32" height="32"></a>
         </div>
-        <p>&copy; <span id="year"></span> | Eric Ayanru | WDD 231</p>
+        <p>&copy; <span id="year"></span> | Eric Ayanru | Nigeria</p>
         <p id="lastmodified"></p>
     </footer>
-    <script src="scripts/navigation.js"></script>
 </body>
 </html>
