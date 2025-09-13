@@ -1,0 +1,23 @@
+{
+    "familyname": "Eric",
+    "date": "10-9-2025",
+    "numberOfPeople": 4,
+    "visited": "bishopric",
+    "members": [
+        {
+            "name": "dad",
+            "gender": "male",
+            "birthdate": "may 10"
+        },
+        {
+            "name": "mom",
+            "gender": "female",
+            "birthdate":"june 17"
+        },
+        {
+            "name": "sister",
+            "gender": "female",
+            "birthdate": "match 17"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Delta Farms Ltd",
+    "address": "12 Ogbele Road, Warri, Delta State",
+    "phone": "+234-801-234-5678",
+    "website": "https://deltafarms.com",
+    "image": "images/headway.webp",
+    "membershipLevel": "gold"
+  },
+  {
+    "name": "GreenTech Solutions",
+    "address": "45 Nnebisi Road, Asaba, Delta State",
+    "phone": "+234-802-345-6789",
+    "website": "https://greentech.com.ng",
+    "image": "images/jess_1.webp",
+    "membershipLevel": "silve"
+  },
+  {
+    "name": "Royal Oil Services",
+    "address": "Plot 7 Effurun-Sapele Road, Effurun, Delta State",
+    "phone": "+234-803-111-2222",
+    "website": "https://royaloil.com",
+    "image": "images/cahr1.webp",
+    "membershipLevel": "member"
+  },
+  {
+    "name": "Bright Future Schools",
+    "address": "101 Okpe Street, Sapele, Delta State",
+    "phone": "+234-804-555-6789",
+    "website": "https://brightfuture.edu.ng",
+    "image": "images/docusign.webp",
+    "membershipLevel": "silve"
+  },
+  {
+    "name": "Niger Delta Fishery",
+    "address": "22 River Lane, Bomadi, Delta State",
+    "phone": "+234-805-987-6543",
+    "website": "https://ndfishery.com",
+    "image": "images/maranda.webp",
+    "membershipLevel": "gold"
+  },
+  {
+    "name": "EcoBuild Construction",
+    "address": "33 Jakpa Road, Effurun, Delta State",
+    "phone": "+234-806-234-8899",
+    "website": "https://ecobuild.com.ng",
+    "image": "images/pict-1.webp",
+    "membershipLevel": "member"
+  },
+  {
+    "name": "Sunrise Health Clinic",
+    "address": "88 Umuaji Street, Asaba, Delta State",
+    "phone": "+234-807-444-1122",
+    "website": "https://sunriseclinic.ng",
+    "image": "images/scott.webp",
+    "membershipLevel": "silve"
+  }
+]
