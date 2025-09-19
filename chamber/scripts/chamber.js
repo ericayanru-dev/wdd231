@@ -129,7 +129,7 @@ const displayWeather = (data) =>{
     let url = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
 
     image.setAttribute("src",url)
-    image.setAttribute("alt", `Weather condition: ${data.weather[0].description}`);
+    image.setAttribute("alt", `Portrait of ${data.weather[0].description}`);
     image.setAttribute("loading", "lazy");
     image.setAttribute("width", "100");
     image.setAttribute("height", "100");
