@@ -129,7 +129,7 @@ const displayWeather = (data) =>{
     let url = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
 
     image.setAttribute("src",url)
-    image.setAttribute("alt", `Portrait of ${data.weather[0].description}`);
+    image.setAttribute("alt", `Weather condition: ${data.weather[0].description}`);
     image.setAttribute("loading", "lazy");
     image.setAttribute("width", "100");
     image.setAttribute("height", "100");
@@ -203,7 +203,7 @@ const displayTag = (tag) => {
         let logo = document.createElement("img");
         let phone = document.createElement("p");
         let address = document.createElement("p");
-        let website = document.createElement("p");
+        let website = document.createElement("a");
         let membership = document.createElement("p");
         let div = document.createElement("div");
         let div2 = document.createElement("div");
@@ -220,12 +220,13 @@ const displayTag = (tag) => {
         div2.setAttribute("class", "image");
         div3.setAttribute("class", "image-info")
         aside.setAttribute("class", "name-div")
+        website.setAttribute("href", item.website);
         
         name.textContent = item.name;
         phone.textContent = item.phone;
         address.textContent = item.address;
-        website.textContent = item.website;
-        membership.textContent = item.membershipLeve;
+        website.textContent = `Link`;
+        membership.textContent = `membership level: ${item.membershipLevel}`;
 
 
         div.append(phone, address, website, membership);

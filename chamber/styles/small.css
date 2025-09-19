@@ -42,7 +42,7 @@ header img {
     height: 50px;
 }
 
-.nav a, .hero a{
+.nav a, .hero a, .info a{
     display: block;
     padding: .8rem 10px;
     color: #f1f2fb;
@@ -60,7 +60,7 @@ nav {
 nav.show {
     display: block; /* for mobile hamburger toggle */
 }
-.nav a:hover, .hero a:hover {
+.nav a:hover, .hero a:hover,.info a:hover {
     background-color: #004080;
 }
 

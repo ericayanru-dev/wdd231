@@ -32,8 +32,7 @@ nav.show {
   header{
     position:static;
     display: flex;
-    align-items: center;  
-    justify-items: center;
+    align-items: center; 
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
     background: #004080;
