@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the Delta Chamber of Commerce Home. Discover local businesses, services, and opportunities that support our growing community.">
+    <meta name="description" content="Explore the Delta Chamber of Commerce Directory. Discover local businesses, services, and opportunities that support our growing community.">
     <meta name="author" content="Eric ayanru">
     <meta property="og:title" content="Course Home Page">
     <meta property="og:description" content="Eric Ayanru| Course Home Page| WDD231">
@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Chamber of Commerce Home Page</title>
+    <title>Chamber of Commerce Directory Page</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -35,17 +35,40 @@
             <button id="theme-toggle" class="light" aria-label="Toggle dark mode">"🌙"</button>
             <button id="ham-btn" class="hamburger" aria-expanded="false" aria-label="Toggle navigation"></button>
         </div>
-
-
-
     </header>
     <main>
-        <h1>Chamber of Commerce Directory</h1>
-        <section>
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+        <section class="hero">
+            <img src="images/hero_chamber.webp" alt="hero_chamber" width="1000" height="433" loading="lazy">
+            <a href="join.html"> join the chamber of commerce </a>
         </section>
-        <section id="display" class="grid">
+        <section >
+            <h1>Home</h1>
+            <div class="home">
+            <div>
+                <h2>Events</h2>
+                <article>
+                    <p><span>Event:</span>Tech & Chill Hangout</p>
+                    <p><span>Date:</span>Saturday, September 14, 2025</p>
+                    <p><span>Time:</span>4:00 PM – 7:00 PM</p>
+                    <p><span>Venue:</span>City Park, Warri</p>
+                    <p><span>Theme:</span>Connect • Share • Grow</p>
+                </article>
+            </div>
+            <div>
+                <h2> Current Weather</h2>
+                <article class="current-weather" id="current-weather">
+
+                </article>
+            </div>
+            <div>
+                <h2> Weather Forecast</h2>
+                <article class="weather-forecast" id="weather-forecast">
+
+                </article>
+            </div>
+            </div>
+        </section>
+        <section id="advertisement-cards" class="advertisement-cards">
 
         </section>
     </main>

@@ -13,7 +13,7 @@
     "phone": "+234-802-345-6789",
     "website": "https://greentech.com.ng",
     "image": "images/jess_1.webp",
-    "membershipLevel": "silve"
+    "membershipLevel": "silver"
   },
   {
     "name": "Royal Oil Services",
@@ -29,7 +29,7 @@
     "phone": "+234-804-555-6789",
     "website": "https://brightfuture.edu.ng",
     "image": "images/docusign.webp",
-    "membershipLevel": "silve"
+    "membershipLevel": "silver"
   },
   {
     "name": "Niger Delta Fishery",
@@ -53,6 +53,6 @@
     "phone": "+234-807-444-1122",
     "website": "https://sunriseclinic.ng",
     "image": "images/scott.webp",
-    "membershipLevel": "silve"
+    "membershipLevel": "silver"
   }
 ]

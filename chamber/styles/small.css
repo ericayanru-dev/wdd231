@@ -42,7 +42,7 @@ header img {
     height: 50px;
 }
 
-.nav a {
+.nav a, .hero a{
     display: block;
     padding: .8rem 10px;
     color: #f1f2fb;
@@ -60,7 +60,7 @@ nav {
 nav.show {
     display: block; /* for mobile hamburger toggle */
 }
-.nav a:hover {
+.nav a:hover, .hero a:hover {
     background-color: #004080;
 }
 
@@ -120,7 +120,6 @@ button:hover {
 
 .grid .entry {
     display: grid;
-    flex-wrap: wrap;
     background: white;
     justify-content:center;
     border: 1px solid #ddd;
@@ -172,7 +171,9 @@ body.dark-mode footer {
     background: #222;
 }
 
-body.dark-mode .entry {
+body.dark-mode .entry,
+body.dark-mode .image-info,
+body.dark-mode .home div {
     background: #1e1e1e;
     border-color: #333;
 }
@@ -217,3 +218,69 @@ footer {
     background: #004080;
     color: white;
     padding: .5rem;}
+
+
+
+/*=============== Home ========== */
+.hero{
+    position: relative;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
+.hero a{
+    position:absolute;
+    bottom: 40%;
+    right: 20%;
+    text-decoration: none;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr; /* stack vertically on tablets/phones */
+    text-align: center;
+    margin: 1rem;
+  }
+
+.home h2{
+    background-color: #090909;
+    color: white;
+}
+
+.home div, .image-info{
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+.advertisement-cards{
+    display: grid;
+    justify-content:center;
+    text-align: center;
+    gap: 1rem;
+    padding: .5rem;
+    gap: .5rem;
+    
+    
+  }
+.advertisement-cards img{
+    width: 100%;
+    height: auto;
+    border-radius: .5rem;
+  }
+
+.advertisement-cards .image-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:center;
+    padding: 10px;
+}
+
+
+  

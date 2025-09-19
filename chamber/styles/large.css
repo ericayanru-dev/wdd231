@@ -1,5 +1,5 @@
 @media only screen and (min-width: 38rem) {
-  header, main, nav, footer {
+  header, main, nav, footer, .hero {
     max-width: 900px;
     margin: 0 auto;
   }
@@ -49,4 +49,22 @@ nav.show {
     color: white;
     text-align: center;}
 
+    .hero a{
+    position:absolute;
+    bottom: 50%;
+    right: 30%;
+    text-decoration: none;
+}
+    .home{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+}
+
+.advertisement-cards{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+ 
+  
 }
