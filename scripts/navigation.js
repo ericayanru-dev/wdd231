@@ -6,7 +6,8 @@ const all = document.querySelector("#all");
 const cse = document.querySelector("#cse");
 const wdd = document.querySelector("#wdd");
 const course = document.querySelector("#course");
-const credits = document.querySelector("#credits")
+const credits = document.querySelector("#credits");
+const courseDetails = document.querySelector("#course-details");
 
 navButton.addEventListener("click",() => {
     navButton.classList.toggle("show")
@@ -100,10 +101,7 @@ function createCourses(course) {
   const tech = course.technology.map(t => `<span class="tag">${t}</span>`).join("");
   return `
     <article class="course-card">
-      <h3>${course.subject} ${course.number} — ${course.title}</h3>
-      <div class="meta">${course.credits} cr • ${course.certificate} • ${course.completed ? "Completed ✅" : "In Progress ⏳"}</div>
-      <p>${course.description}</p>
-      <div class="tags">${tech}</div>
+    <button>${course.subject} ${course.number}</button>
     </article>
   `;
 }
@@ -131,3 +129,50 @@ function filterWdd()
 wdd.addEventListener("click", filterWdd);
 all.addEventListener("click", () => displayCourses(courses));
 displayCourses(courses);
+
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
+  `;
+
+  courseDetails.showModal();
+
+  // Close button
+  document.querySelector("#closeModal").addEventListener("click", () => {
+    courseDetails.close();
+  });
+
+  // Close when clicking outside
+  courseDetails.addEventListener("click", (event) => {
+    const rect = courseDetails.getBoundingClientRect();
+    if (
+      event.clientX < rect.left ||
+      event.clientX > rect.right ||
+      event.clientY < rect.top ||
+      event.clientY > rect.bottom
+    ) {
+      courseDetails.close();
+    }
+  });
+}
+
+function displayCourses(coursesArray) {
+  course.innerHTML = coursesArray.map(createCourses).join("");
+  const total = coursesArray.reduce((sum, c) => sum + Number(c.credits || 0), 0);
+  credits.innerHTML = total;
+
+  // attach modal trigger
+  const cards = document.querySelectorAll(".course-card");
+  cards.forEach((card, index) => {
+    card.addEventListener("click", () => {
+      displayCourseDetails(coursesArray[index]);
+    });
+  });
+}

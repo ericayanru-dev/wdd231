@@ -83,9 +83,9 @@ const displayData = (data) => {
         displayInfo.appendChild(article)
     })
 }
+if(year){year.textContent = new Date().getFullYear();
+lastmodified.textContent = document.lastModified;}
 
-year.textContent = new Date().getFullYear();
-lastmodified.textContent = document.lastModified;
 
 
 const currentWeather = document.querySelector("#current-weather");
@@ -241,3 +241,39 @@ const displayTag = (tag) => {
 }
 
 getTag()
+
+
+  
+window.addEventListener("DOMContentLoaded", () => {
+    const timestampField = document.getElementById("timestamp");
+    timestampField.value = new Date().toISOString();
+})
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".card a").forEach(link => {
+    link.addEventListener("click", () => {
+      const modalId = link.getAttribute("href").substring(1);
+      document.getElementById(modalId).showModal();
+    });
+  });
+  document.querySelectorAll("dialog .close-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      btn.closest("dialog").close();});
+  });
+});
+
+const getString = window.location.search;
+const myinfo = new URLSearchParams(getString);
+
+const resultsDiv = document.querySelector("#results");
+
+if (resultsDiv) {
+  resultsDiv.innerHTML = `
+    <h2>Thank You! You will receive an email soon.</h2>
+    <p><strong>Name:</strong> ${myinfo.get("first") || ""} ${myinfo.get("last") || ""}</p>
+    <p><strong>Email:</strong> ${myinfo.get("email") || ""}</p>
+    <p><strong>Phone:</strong> ${myinfo.get("phone") || ""}</p>
+    <p><strong>Membership Level:</strong> ${myinfo.get("membershipLevel") || ""}</p>
+    <p><strong>Submitted on:</strong> ${myinfo.get("timestamp") || ""}</p>
+  `;
+}
