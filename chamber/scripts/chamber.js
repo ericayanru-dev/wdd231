@@ -313,25 +313,39 @@ function displayDiscoverItems(data) {
         card.classList.add("card");
         card.classList.add("carded");
 
-        card.innerHTML = `
-            <h2>${item.name}</h2>
-            <figure>
-                <img src="${item.image}" alt="${item.name}" width="300" height="200" loading="lazy">
-                <figcaption>${item.name}</figcaption>
-            </figure>
-            <address>${item.address}</address>
-            <p>${item.description}</p>
-            <a href="${item.website}" target="_blank" class="learn-more">Learn more</a>
-        `;
+        let name = document.createElement("h2");
+        let logo = document.createElement("img");
+        let figure = document.createElement("figure")
+        let figcaption = document.createElement("figcaption")
+        let address = document.createElement("address");
+        let description = document.createElement("p")
+        let link = document.createElement("a");
 
-        container.appendChild(card);
+        logo.setAttribute("src", item.image)
+        logo.setAttribute("alt", `Logo of ${item.name}`);
+        logo.setAttribute("loading", "lazy");
+        logo.setAttribute("width", "300");
+        logo.setAttribute("height", "200");
+
+        
+        name.textContent = item.name;
+        figcaption.textContent = item.name;
+        address.textContent = item.address;
+        description.textContent = item.description;
+        link.innerHTML = `<a href="${item.website}" target="_blank" class="learn-more">Learn more</a>`
+
+
+        figure.append(logo, figcaption);
+        card.append(name, figure, address, description, link)
+        container.appendChild(card)
+       
     });
 }
 
 if (container){loadDiscoverData()}
 
 
-if(sidebar){document.addEventListener("DOMContentLoaded", () => {
+if(sidebar){
   const lastVisitKey = "last-visit";
 
   // Get today's date
@@ -370,4 +384,4 @@ if(sidebar){document.addEventListener("DOMContentLoaded", () => {
 
   // Update last visit date in localStorage
   localStorage.setItem(lastVisitKey, now);
-});}
+};
