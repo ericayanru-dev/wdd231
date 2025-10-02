@@ -7,6 +7,11 @@ const list = document.querySelector("#list");
 const displayInfo = document.querySelector("#display");
 const year = document.querySelector("#year");
 const lastmodified = document.querySelector("#lastmodified")
+const currentWeather = document.querySelector("#current-weather");
+const weatherForecast = document.querySelector("#weather-forecast");
+const advertisementCards = document.querySelector("#advertisement-cards");
+const container = document.querySelector("#discover");
+const sidebar = document.querySelector("#sidebar"); // sidebar content area
 
 
 if (themeToggle) {
@@ -88,16 +93,12 @@ lastmodified.textContent = document.lastModified;}
 
 
 
-const currentWeather = document.querySelector("#current-weather");
-const weatherForecast = document.querySelector("#weather-forecast");
-const advertisementCards = document.querySelector("#advertisement-cards");
-
 async function openWeather() {
     try {
         const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=49.77&lon=6.63&units=imperial&appid=4f53f7c5a95d5a43840fed0e2a1c880a")
         if (response.ok) {
             const data = await response.json();
-            displayWeather(data);
+             displayWeather(data); 
         }
         else {
             throw Error(await response.text());
@@ -105,14 +106,14 @@ async function openWeather() {
         const forecastRes = await fetch("https://api.openweathermap.org/data/2.5/forecast?lat=49.77&lon=6.63&units=imperial&appid=4f53f7c5a95d5a43840fed0e2a1c880a");
         if (forecastRes.ok) {
             const forecastData = await forecastRes.json();
-            displayForecast(forecastData);
+            if (weatherForecast) { displayForecast(forecastData); }
         }
     }
     catch (error) {
         console.log(error)
     }
 }
-openWeather();
+if (currentWeather && weatherForecast) openWeather();
 
 
 
@@ -240,25 +241,29 @@ const displayTag = (tag) => {
     })
 }
 
-getTag()
+if (advertisementCards) getTag();
 
 
   
-window.addEventListener("DOMContentLoaded", () => {
-    const timestampField = document.getElementById("timestamp");
-    timestampField.value = new Date().toISOString();
-})
-
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".card a").forEach(link => {
-    link.addEventListener("click", () => {
-      const modalId = link.getAttribute("href").substring(1);
-      document.getElementById(modalId).showModal();
+    link.addEventListener("click", (evt) => {
+      evt.preventDefault();
+      const modalId = (link.getAttribute("href") || "").replace(/^#/, "");
+      const dialog = document.getElementById(modalId);
+      if (dialog && typeof dialog.showModal === "function") {
+        dialog.showModal();
+      } else {
+        console.warn("Dialog not found or unsupported:", modalId);
+      }
     });
   });
+
   document.querySelectorAll("dialog .close-btn").forEach(btn => {
     btn.addEventListener("click", () => {
-      btn.closest("dialog").close();});
+      const dlg = btn.closest("dialog");
+      if (dlg) dlg.close();
+    });
   });
 });
 
@@ -277,3 +282,92 @@ if (resultsDiv) {
     <p><strong>Submitted on:</strong> ${myinfo.get("timestamp") || ""}</p>
   `;
 }
+
+// discover.js
+
+async function loadDiscoverData() {
+    try {
+        // Fetch the JSON file
+        const response = await fetch("data/interest.json");
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        // Display the data
+        displayDiscoverItems(data);
+
+    } catch (error) {
+        console.error("Error loading discover data:", error);
+    }
+}
+
+function displayDiscoverItems(data) {
+
+    container.innerHTML = ""; // clear before rendering
+
+    data.forEach(item => {
+        const card = document.createElement("div");
+        card.classList.add("card");
+        card.classList.add("carded");
+
+        card.innerHTML = `
+            <h2>${item.name}</h2>
+            <figure>
+                <img src="${item.image}" alt="${item.name}" width="300" height="200" loading="lazy">
+                <figcaption>${item.name}</figcaption>
+            </figure>
+            <address>${item.address}</address>
+            <p>${item.description}</p>
+            <a href="${item.website}" target="_blank" class="learn-more">Learn more</a>
+        `;
+
+        container.appendChild(card);
+    });
+}
+
+if (container){loadDiscoverData()}
+
+
+if(sidebar){document.addEventListener("DOMContentLoaded", () => {
+  const lastVisitKey = "last-visit";
+
+  // Get today's date
+  const now = Date.now();
+
+  // Check if last visit exists in localStorage
+  let lastVisit = localStorage.getItem(lastVisitKey);
+
+  let message = "";
+
+  if (lastVisit) {
+    // Convert string back to number
+    lastVisit = Number(lastVisit);
+
+    // Calculate difference in days
+    const diffInMs = now - lastVisit;
+    const diffInDays = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
+
+    // Choose message based on time since last visit
+    if (diffInDays === 0) {
+      message = "Welcome back! You visited earlier today.";
+    } else if (diffInDays === 1) {
+      message = "Welcome back! It’s been 1 day since your last visit.";
+    } else {
+      message = `Welcome back! It’s been ${diffInDays} days since your last visit.`;
+    }
+  } else {
+    // First time visitor
+    message = "Welcome! This is your first visit.";
+  }
+
+  // Show message in the sidebar
+  if (sidebar) {
+    sidebar.textContent = message;
+  }
+
+  // Update last visit date in localStorage
+  localStorage.setItem(lastVisitKey, now);
+});}

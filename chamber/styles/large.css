@@ -1,6 +1,5 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 64rem) {
   header, main, nav, footer, .hero {
-    max-width: 900px;
     margin: 0 auto;
   }
 
@@ -68,9 +67,7 @@ nav.show {
   .joinform {
     margin-bottom: 0; /* remove mobile spacing */
   }
-}
-
-.membership-cards {
+  .membership-cards {
   display: grid;
   gap: 1rem;
 }
@@ -83,3 +80,8 @@ nav.show {
   box-shadow: 0 0 5px rgba(0,0,0,0.05);
 }
 
+.discover {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+}

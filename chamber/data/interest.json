@@ -1,0 +1,51 @@
+
+  [
+    {
+      "name": "Nana’s Palace",
+      "address": "Koko, Warri North LGA, Delta State",
+      "description": "The historic palace of Chief Nana Olomu, a 19th-century merchant prince. It now serves as a museum showcasing artifacts, relics, and stories of trade and culture.",
+      "image": "images/Nana_Koko_n_palace.webp"
+    },
+    {
+      "name": "Warri Kingdom Royal Palace",
+      "address": "Warri City, Delta State",
+      "description": "The official residence of the Olu of Warri, a cultural and historical hub where traditions and festivals of the Itsekiri people are preserved.",
+      "image": "images/warri-itsekiri-kingdom.webp"
+    },
+    {
+      "name": "Agbor Royal Palace",
+      "address": "Agbor, Ika South LGA, Delta State",
+      "description": "The residence of the Dein of Agbor Kingdom, a symbol of heritage, leadership, and cultural preservation in Delta State.",
+      "image": "images/Agbor-palace.webp"
+    },
+    {
+      "name": "Abraka Turf and Country Club",
+      "address": "Abraka, Ethiope East LGA, Delta State",
+      "description": "A resort offering horse riding, water sports, and golf, surrounded by lush tropical greenery along the River Ethiope.",
+      "image": "images/abraka-turf.webp"
+    },
+    {
+      "name": "River Ethiope Source",
+      "address": "Umuaja, Ukwuani LGA, Delta State",
+      "description": "Famous as the deepest inland waterway in Africa, the Ethiope River’s source at Umuaja is both scenic and spiritual to locals.",
+      "image": "images/river-ethiope.webp"
+    },
+    {
+      "name": "Otuogu Beach",
+      "address": "Asaba, near River Niger, Delta State",
+      "description": "A popular riverside relaxation spot where locals and tourists enjoy picnics, swimming, and boat rides on the Niger River.",
+      "image": "images/otuogu-beach(1).webp"
+    },
+    {
+      "name": "Araya Bible Site",
+      "address": "Araya, Isoko South LGA, Delta State",
+      "description": "A Christian pilgrimage site believed to be where a copy of the Holy Bible descended mysteriously in 1914. It attracts visitors yearly.",
+      "image": "images/Araya-Bible.webp"
+    },
+    {
+      "name": "Ovwian-Aladja Steel Complex",
+      "address": "Aladja, near Warri, Delta State",
+      "description": "One of Nigeria’s major steel plants, representing industrial heritage and the economic backbone of the region.",
+      "image": "images/Ovwian-Aladja-Steel-Complex1.webp"
+    }
+  ]

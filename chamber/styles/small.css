@@ -409,23 +409,20 @@ label .membership-options input[type="radio"] {
 }
 
 
-.card {
+.card, img {
   background: #f8f9fb;
   border-radius: 10px;
-  padding: 1rem;
   text-align: left;
   box-shadow: 0 6px 18px rgba(12,12,12,0.05);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
   align-items: stretch;
   animation: cardIn 600ms ease forwards;
   opacity: 0;
   transform: translateY(8px);
 }
 .card:hover,
-.card:focus-within {
+.card:focus-within
+{
   transform: translateY(-6px);
   box-shadow: 0 10px 30px rgba(12,12,12,0.12);
 }
@@ -517,3 +514,40 @@ dialog ul {
     border: 1px solid #E07A5F;
     border-radius: 6px;
   }
+
+.carded {
+  margin: 1rem 8px;
+  border: 1px solid #999;
+  display: grid;
+  grid-template-areas: 
+    "name"
+    "photo"
+    "description"
+    "location"
+    "link";
+}
+
+.carded h2 {
+  margin: 1rem 10px;
+  grid-area: name;
+}
+
+.carded img {
+  width: 100%;
+  grid-area: photo;
+}
+
+.carded p {
+  margin: 1rem 10px;
+  grid-area: description;
+}
+
+.carded address {
+  margin: 1rem 10px;
+  grid-area: location;
+}
+
+.carded a{
+  margin: 1rem 10px;
+  grid-area: link;
+}
