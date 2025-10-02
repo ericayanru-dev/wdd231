@@ -409,7 +409,7 @@ label .membership-options input[type="radio"] {
 }
 
 
-.card, img {
+.card {
   background: #f8f9fb;
   border-radius: 10px;
   text-align: left;
