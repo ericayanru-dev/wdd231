@@ -6,7 +6,7 @@
     "duration": "45 min",
     "difficulty": "intermediate",
     "equipment": "barbell, rack",
-    "image": "images/workout1.jpg",
+    "image": "images/1.webp",
     "description": "Compound lifts focused on squat, bench, deadlift variations with accessory work."
   },
   {
@@ -16,7 +16,7 @@
     "duration": "20 min",
     "difficulty": "beginner",
     "equipment": "none",
-    "image": "images/workout2.jpg",
+    "image": "images/2.webp",
     "description": "High intensity intervals using only bodyweight — great for small spaces."
   },
   {
@@ -26,7 +26,7 @@
     "duration": "35 min",
     "difficulty": "intermediate",
     "equipment": "dumbbells",
-    "image": "images/workout3.jpg",
+    "image": "images/3.wbp",
     "description": "Focus on chest, shoulders and triceps with progressive overload."
   },
   {
@@ -36,7 +36,7 @@
     "duration": "50 min",
     "difficulty": "advanced",
     "equipment": "barbell, dumbbells",
-    "image": "images/workout4.jpg",
+    "image": "images/4.webp",
     "description": "Higher volume for quads, hamstrings, and glutes — great for size."
   },
   {

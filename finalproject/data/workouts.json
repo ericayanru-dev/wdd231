@@ -6,7 +6,7 @@
     "duration": "45 min",
     "difficulty": "intermediate",
     "equipment": "barbell, rack",
-    "image": "images/workout1.jpg",
+    "image": "images/1.webp",
     "description": "Compound lifts focused on squat, bench, deadlift variations with accessory work."
   },
   {
@@ -16,7 +16,7 @@
     "duration": "20 min",
     "difficulty": "beginner",
     "equipment": "none",
-    "image": "images/workout2.jpg",
+    "image": "images/2.webp",
     "description": "High intensity intervals using only bodyweight — great for small spaces."
   },
   {
@@ -26,7 +26,7 @@
     "duration": "35 min",
     "difficulty": "intermediate",
     "equipment": "dumbbells",
-    "image": "images/workout3.jpg",
+    "image": "images/3.webp",
     "description": "Focus on chest, shoulders and triceps with progressive overload."
   },
   {
@@ -36,7 +36,7 @@
     "duration": "50 min",
     "difficulty": "advanced",
     "equipment": "barbell, dumbbells",
-    "image": "images/workout4.jpg",
+    "image": "images/4.webp",
     "description": "Higher volume for quads, hamstrings, and glutes — great for size."
   },
   {
@@ -46,7 +46,7 @@
     "duration": "25 min",
     "difficulty": "beginner",
     "equipment": "mat",
-    "image": "images/workout5.jpg",
+    "image": "images/5.webp",
     "description": "Stretching, stability and core control exercises to support recovery."
   },
   {
@@ -56,7 +56,7 @@
     "duration": "15 min",
     "difficulty": "beginner",
     "equipment": "dumbbells",
-    "image": "images/workout6.jpg",
+    "image": "images/6.webp",
     "description": "Short superset routine for arms (biceps and triceps)."
   },
   {
@@ -66,7 +66,7 @@
     "duration": "30-60 min",
     "difficulty": "intermediate",
     "equipment": "running shoes",
-    "image": "images/workout7.jpg",
+    "image": "images/7.webp",
     "description": "Structured run plan for building steady endurance."
   },
   {
@@ -76,7 +76,7 @@
     "duration": "12 min",
     "difficulty": "advanced",
     "equipment": "none",
-    "image": "images/workout8.jpg",
+    "image": "images/8.webp",
     "description": "20s work / 10s rest — four minutes per block for max conditioning."
   },
   {
@@ -86,7 +86,7 @@
     "duration": "18 min",
     "difficulty": "beginner",
     "equipment": "mat",
-    "image": "images/workout9.jpg",
+    "image": "images/9.webp",
     "description": "Flow style mobility sequence to improve movement quality."
   },
   {
@@ -96,7 +96,7 @@
     "duration": "40 min",
     "difficulty": "intermediate",
     "equipment": "dumbbells, pull-up bar",
-    "image": "images/workout10.jpg",
+    "image": "images/10.webp",
     "description": "Circuit alternating push and pull exercises for time."
   },
   {
@@ -106,7 +106,7 @@
     "duration": "30 min",
     "difficulty": "advanced",
     "equipment": "barbell",
-    "image": "images/workout11.jpg",
+    "image": "images/11.webp",
     "description": "Technique and power development for Olympic lifting variations."
   },
   {
@@ -116,7 +116,7 @@
     "duration": "25 min",
     "difficulty": "beginner",
     "equipment": "bike or elliptical",
-    "image": "images/workout12.jpg",
+    "image": "images/1.webp",
     "description": "Gentle cardio option for recovery or low-impact days."
   },
   {
@@ -126,7 +126,7 @@
     "duration": "22 min",
     "difficulty": "intermediate",
     "equipment": "mat",
-    "image": "images/workout13.jpg",
+    "image": "images/3.webp",
     "description": "Planks, anti-rotation drills and loaded carries to build core resilience."
   },
   {
@@ -136,7 +136,7 @@
     "duration": "28 min",
     "difficulty": "advanced",
     "equipment": "box, small space",
-    "image": "images/workout14.jpg",
+    "image": "images/4.webp",
     "description": "Explosive jump and landing drills to improve speed and power."
   },
   {
@@ -146,7 +146,7 @@
     "duration": "20 min",
     "difficulty": "beginner",
     "equipment": "mat, foam roller",
-    "image": "images/workout15.jpg",
+    "image": "images/5.webp",
     "description": "Guided recovery session with breathing, foam rolling and stretches."
   }
 ]
