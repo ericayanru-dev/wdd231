@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512" height="512">
+  <title id="logoTitle">MuscleMax Planner logo</title>
+  <desc id="logoDesc">Minimal modern logo: a dumbbell integrated with a bar chart icon and the word MuscleMax Planner.</desc>
+
+  <defs>
+    <style>
+      .brand { fill: #0f1724; }
+      .accent { fill: #0f1724; }
+      .type-large { font: 700 56px "Segoe UI", Roboto, Arial, sans-serif;}
+      .type-small { font: 400 28px "Segoe UI", Roboto, Arial, sans-serif;}
+    </style>
+  </defs>
+
+  <g transform="translate(40,32)" aria-hidden="true">
+    <rect x="0" y="46" width="18" height="76" rx="6" class="accent"/>
+    <rect x="-24" y="36" width="18" height="96" rx="6" class="accent"/>
+    <rect x="-48" y="56" width="18" height="56" rx="6" class="accent"/>
+    <rect x="-12" y="84" width="180" height="16" rx="8" class="accent"/>
+    <rect x="168" y="46" width="18" height="76" rx="6" class="accent"/>
+    <rect x="192" y="36" width="18" height="96" rx="6" class="accent"/>
+    <rect x="216" y="56" width="18" height="56" rx="6" class="accent"/>
+  </g>
+
+  <g transform="translate(300,110)">
+    <text class="type-large brand" x="0" y="-6">MUSCLEMAX</text>
+    <text class="type-small brand" x="0" y="38">Planner</text>
+  </g>
+</svg>

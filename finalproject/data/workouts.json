@@ -1,0 +1,152 @@
+[
+  {
+    "id": "w1",
+    "name": "Full-Body Strength (Barbell)",
+    "type": "strength",
+    "duration": "45 min",
+    "difficulty": "intermediate",
+    "equipment": "barbell, rack",
+    "image": "images/workout1.jpg",
+    "description": "Compound lifts focused on squat, bench, deadlift variations with accessory work."
+  },
+  {
+    "id": "w2",
+    "name": "Bodyweight HIIT",
+    "type": "cardio",
+    "duration": "20 min",
+    "difficulty": "beginner",
+    "equipment": "none",
+    "image": "images/workout2.jpg",
+    "description": "High intensity intervals using only bodyweight — great for small spaces."
+  },
+  {
+    "id": "w3",
+    "name": "Upper Body Push",
+    "type": "strength",
+    "duration": "35 min",
+    "difficulty": "intermediate",
+    "equipment": "dumbbells",
+    "image": "images/workout3.jpg",
+    "description": "Focus on chest, shoulders and triceps with progressive overload."
+  },
+  {
+    "id": "w4",
+    "name": "Lower Body Hypertrophy",
+    "type": "strength",
+    "duration": "50 min",
+    "difficulty": "advanced",
+    "equipment": "barbell, dumbbells",
+    "image": "images/workout4.jpg",
+    "description": "Higher volume for quads, hamstrings, and glutes — great for size."
+  },
+  {
+    "id": "w5",
+    "name": "Core & Mobility",
+    "type": "mobility",
+    "duration": "25 min",
+    "difficulty": "beginner",
+    "equipment": "mat",
+    "image": "images/workout5.jpg",
+    "description": "Stretching, stability and core control exercises to support recovery."
+  },
+  {
+    "id": "w6",
+    "name": "Quick Arms Blast",
+    "type": "strength",
+    "duration": "15 min",
+    "difficulty": "beginner",
+    "equipment": "dumbbells",
+    "image": "images/workout6.jpg",
+    "description": "Short superset routine for arms (biceps and triceps)."
+  },
+  {
+    "id": "w7",
+    "name": "Endurance Run Plan",
+    "type": "cardio",
+    "duration": "30-60 min",
+    "difficulty": "intermediate",
+    "equipment": "running shoes",
+    "image": "images/workout7.jpg",
+    "description": "Structured run plan for building steady endurance."
+  },
+  {
+    "id": "w8",
+    "name": "Tabata Express",
+    "type": "cardio",
+    "duration": "12 min",
+    "difficulty": "advanced",
+    "equipment": "none",
+    "image": "images/workout8.jpg",
+    "description": "20s work / 10s rest — four minutes per block for max conditioning."
+  },
+  {
+    "id": "w9",
+    "name": "Mobility Flow",
+    "type": "mobility",
+    "duration": "18 min",
+    "difficulty": "beginner",
+    "equipment": "mat",
+    "image": "images/workout9.jpg",
+    "description": "Flow style mobility sequence to improve movement quality."
+  },
+  {
+    "id": "w10",
+    "name": "Push/Pull Circuit",
+    "type": "strength",
+    "duration": "40 min",
+    "difficulty": "intermediate",
+    "equipment": "dumbbells, pull-up bar",
+    "image": "images/workout10.jpg",
+    "description": "Circuit alternating push and pull exercises for time."
+  },
+  {
+    "id": "w11",
+    "name": "Power Clean Focus",
+    "type": "power",
+    "duration": "30 min",
+    "difficulty": "advanced",
+    "equipment": "barbell",
+    "image": "images/workout11.jpg",
+    "description": "Technique and power development for Olympic lifting variations."
+  },
+  {
+    "id": "w12",
+    "name": "Low-Impact Cardio",
+    "type": "cardio",
+    "duration": "25 min",
+    "difficulty": "beginner",
+    "equipment": "bike or elliptical",
+    "image": "images/workout12.jpg",
+    "description": "Gentle cardio option for recovery or low-impact days."
+  },
+  {
+    "id": "w13",
+    "name": "Core Strength Series",
+    "type": "core",
+    "duration": "22 min",
+    "difficulty": "intermediate",
+    "equipment": "mat",
+    "image": "images/workout13.jpg",
+    "description": "Planks, anti-rotation drills and loaded carries to build core resilience."
+  },
+  {
+    "id": "w14",
+    "name": "Athletic Plyometrics",
+    "type": "power",
+    "duration": "28 min",
+    "difficulty": "advanced",
+    "equipment": "box, small space",
+    "image": "images/workout14.jpg",
+    "description": "Explosive jump and landing drills to improve speed and power."
+  },
+  {
+    "id": "w15",
+    "name": "Stretch & Recovery",
+    "type": "mobility",
+    "duration": "20 min",
+    "difficulty": "beginner",
+    "equipment": "mat, foam roller",
+    "image": "images/workout15.jpg",
+    "description": "Guided recovery session with breathing, foam rolling and stretches."
+  }
+]

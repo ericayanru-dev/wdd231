@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitForge — Build Strength & Habit</title>
+  <meta name="description" content="FitForge: evidence-based workouts, plans, and habits to build strength and healthy routines." />
+  <meta name="author" content="Eric Ayanru" />
+  <!-- social tag -->
+  <meta property="og:title" content="FitForge — Build Strength & Habit" />
+  <meta property="og:description" content="Workouts, plans and progress tracking built with modern HTML, CSS and JavaScript." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/placeholder.jpg" />
+  <!-- favicon -->
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">FitForge</a>
+      <button id="navToggle" class="hamburger" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="workouts.html">Workouts</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="form-action.html">Contact</a></li>
+          <li><a href="final" id="finalLink">Final</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Build strength. Build habit.</h1>
+      <p>Simple programming, measurable progress, and daily consistency — everything in one lightweight site.</p>
+      <div class="hero-cta">
+        <a class="btn" href="workouts.html">Explore Workouts</a>
+        <button id="toggleTheme" class="btn alt">Toggle Theme</button>
+      </div>
+    </section>
+
+    <section aria-labelledby="features-heading" class="features">
+      <h2 id="features-heading">What you'll find</h2>
+      <ul>
+        <li><strong>15+ workouts</strong> with durations, difficulty and suggested equipment.</li>
+        <li><strong>Save favorites</strong> in your browser (localStorage).</li>
+        <li><strong>Accessible</strong> modal details and keyboard navigation.</li>
+      </ul>
+    </section>
+
+    <section id="sample-list" aria-labelledby="sample-heading">
+      <h2 id="sample-heading">Featured workouts</h2>
+      <div id="workoutGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> FitForge — Built by Eric Ayanru</p>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="attributions.txt">Attributions</a></li>
+          <li><a href="https://youtu.be/REPLACE_WITH_YOUR_VIDEO" target="_blank" rel="noopener">Video Demo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Accessible modal -->
+  <div id="detailModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle">
+    <div class="modal-content" role="document">
+      <button class="modal-close" id="modalClose" aria-label="Close details">&times;</button>
+      <h3 id="modalTitle"></h3>
+      <img id="modalImg" alt="" loading="lazy" />
+      <p id="modalDesc"></p>
+      <dl id="modalDetails"></dl>
+      <button id="favToggle" class="btn">Save Favorite</button>
+    </div>
+  </div>
+</body>
+</html>
