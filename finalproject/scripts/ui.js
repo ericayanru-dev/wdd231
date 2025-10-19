@@ -19,7 +19,7 @@ export function setYears() {
 }
 
 export function registerNavToggles() {
-  const btns = [DOM.navToggle('navToggle'), DOM.navToggle('navToggle2')].filter(Boolean);
+  const btns = [DOM.navToggle('navtoggle')].filter(Boolean);
   btns.forEach(b => {
     b.addEventListener('click', () => {
       const nav = b.nextElementSibling;
