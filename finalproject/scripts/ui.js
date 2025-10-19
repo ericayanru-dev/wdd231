@@ -89,10 +89,9 @@ function closeModal() {
 export function showModal(item) {
   if (!item) return;
   DOM.modalTitle().textContent = item.name;
-  DOM.modalImg().src = item.image || 'images/placeholder.jpg';
-  DOM.modalImg().alt = item.name;
   DOM.modalDesc().textContent = item.description;
   DOM.modalDetails().innerHTML = `
+    <img id="modalImg" src="${item.image}" alt="" loading="lazy" />
     <dt>Type</dt><dd>${escapeHtml(item.type)}</dd>
     <dt>Duration</dt><dd>${escapeHtml(item.duration)}</dd>
     <dt>Difficulty</dt><dd>${escapeHtml(item.difficulty)}</dd>
